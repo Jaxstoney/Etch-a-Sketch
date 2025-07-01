@@ -27,6 +27,16 @@ body {
 
 .buttons-container {
     width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
 }
 
 .sketch-container {
@@ -50,4 +60,20 @@ body {
 
 .div-hovered {
     background-color: rgb(2, 169, 113);
+}
+
+.random-color {
+    background-color: var(--random-color);
+}
+
+.buttons {
+    width: 250px;
+    height: 70px;
+    border-radius: 25px;
+    background-color: rgb(246, 128, 110);
+    border: 5px solid black;
+}
+
+#rainbow {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
 }

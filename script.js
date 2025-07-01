@@ -35,7 +35,7 @@ const dynamicDivs = document.querySelectorAll('.grid-div');
 clearButton.addEventListener('click', () => {
     const dynamicDivs = document.querySelectorAll('.grid-div');
     dynamicDivs.forEach(div => {
-    div.classList.remove('div-hovered');
+    div.classList.remove('div-hovered', 'random-color');
     });
 })
 
@@ -51,3 +51,24 @@ changeButton.addEventListener('click', () => {
         alert ("Error: You didnt enter a number between 1-100");
     }
 })
+
+
+const rainbowButton = document.querySelector('.rainbow');
+
+rainbowButton.addEventListener('click', () => {
+    // Select all the grid divs
+    const dynamicDivs = document.querySelectorAll('.grid-div');
+    
+    // Add the hover effect to each div
+    dynamicDivs.forEach(div => {
+        div.addEventListener('mouseenter', function() {
+            // Generate a random hex color
+            const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+            div.style.setProperty('--random-color', randomColor);
+
+            // Add the class that changes the background color
+            div.classList.add('random-color');
+        });
+    });
+});
