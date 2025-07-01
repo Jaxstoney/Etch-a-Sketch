@@ -1,0 +1,39 @@
+
+
+body {
+    margin: 3vh;
+    background-color:rgb(97, 67, 219);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 95vw;
+}
+
+.content-container {
+    background-color:antiquewhite;
+    display: flex;
+    height: 90%;
+    width: 90%;
+    border-radius: 30px;
+    border: 5px solid black;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    width: 40%;
+}
+
+.sketch-container {
+    width: 60%;
+}
+
+.box {
+    height: 90%;
+    width: 90%;
+}
